@@ -1,5 +1,5 @@
 
-import { depositar, exibirSaldo, sacar } from './financeiro.js'
+import { depositar, exibirSaldo, sacar, simuladorInvestimentos, } from './financeiro.js'
 import {escolhaMenu} from './interacao.js'
 
 let saldo = 0
@@ -20,6 +20,10 @@ export function menu(){
         break
 
         case '4':
+             simuladorInvestimentos()
+        break;
+
+        case '5':
            return 'sair'
         
         
